@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:neumorphic_music_app/screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,12 +12,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-   
-        primarySwatch: Colors.blue,
-      ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+          primarySwatch: Colors.blue,
+          visualDensity: VisualDensity.adaptivePlatformDensity),
+      home: const Screen(),
     );
   }
 }
